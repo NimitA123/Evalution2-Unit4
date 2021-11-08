@@ -56,4 +56,10 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$arch_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$arch_version"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$arch_version"
+    // Retrofit & OkHttp
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    // This library is used by retrofit internally to convert json-pojo and pojo-json
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
+    //This library is used to observe the API logs, Http status code and the API response
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.7.2'
 }
