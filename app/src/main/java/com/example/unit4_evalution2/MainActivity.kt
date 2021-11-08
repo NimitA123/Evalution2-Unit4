@@ -11,6 +11,8 @@ import retrofit2.Response
 import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
+    lateinit var roomDTO: RoomDTO
+    lateinit var  routainDatabase: RoutainDatabase
     private lateinit var  recyclerView: RecyclerView
     private   var  responseList = ArrayList<ResultsDTO>()
     private  lateinit var  adapter: Adapter
